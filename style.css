@@ -6,7 +6,7 @@
     --medium-grey: #A5A58D;
     --full-grey: #6B705C;
     font-family: "Roboto";
-    
+    scroll-behavior: smooth;
 }
 
 body{
@@ -78,4 +78,10 @@ a{
     padding-left: 1rem;
     padding-right: 1rem;
 
+}
+
+.code{
+    width: 300px;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: var(--medium-grey);
 }
