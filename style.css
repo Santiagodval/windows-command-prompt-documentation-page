@@ -1,1 +1,81 @@
-ECHO está activado.
+:root{
+    --dark-wheat: #cb997e;
+    --wheat: #ddbea9;
+    --white: #ffe8d6;
+    --light-grey: #B7B7A4;
+    --medium-grey: #A5A58D;
+    --full-grey: #6B705C;
+    font-family: "Roboto";
+    
+}
+
+body{
+    background-color: var(--white);
+}
+
+#navbar{
+    display: flex;
+    padding: 1rem;
+    position: fixed;
+    top: 0rem;
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    overflow: auto;
+    background-color: var(--white);
+}
+
+#main-doc{
+    margin-top: 12rem;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#navbar::-webkit-scrollbar{
+    height: 0.25rem;
+}
+
+#navbar::-webkit-scrollbar-track{
+    background: var(--wheat);
+}
+
+#navbar::-webkit-scrollbar-thumb{
+    background: var(--dark-wheat);
+}
+
+@media(min-width: 800px){
+
+    #navbar{
+        flex-direction: column;
+       width: 10rem; 
+       height: 100%;
+    }
+
+    a{
+        margin-left: 0;
+    }
+
+    #main-doc{
+        margin-left: 13rem;
+        margin-top: auto;
+    }
+
+
+}
+
+#navbar-header{
+
+    background-color: var(--full-grey);
+    color: var(--white);
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
